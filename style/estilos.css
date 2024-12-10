@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(270deg, #f00808, #e48181, #f31400);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    height: 100vh;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.neon-text{    
+        font-size: 3rem;
+        color: #5977d8; /* Color principal del texto */
+        text-shadow: 
+            0 0 5px #00ffcc,
+            0 0 10px #00ffcc,
+            0 0 20px #00ffcc,
+            0 0 40px #00ffaa,
+            0 0 80px #00ffaa,
+            0 0 120px #00ffaa;    
+}
+
+.neon-text:hover{
+    font-size: 3rem;
+        color: #00ff40; /* Color principal del texto */
+        text-shadow: 
+            0 0 5px #83358a,
+            0 0 10px #00ffd5,
+            0 0 20px #00ffcc,
+            0 0 40px #00ffaa,
+            0 0 80px #00ffaa,
+            0 0 120px #00ffaa;    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgb(255, 247, 247);
+    border: 4px solid #c40505;
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+.load-more {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.5s ease;
+}
+
+.load-more:hover {
+    background-color: #0056b3;
+}
